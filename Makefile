@@ -6,7 +6,7 @@
 #    By: luribero <luribero@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/05 00:10:28 by luribero          #+#    #+#              #
-#    Updated: 2024/03/05 00:11:44 by luribero         ###   ########.fr        #
+#    Updated: 2024/03/30 00:42:34 by luribero         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 
 NAME		=	get_next_line.a
 CC			=	gcc
-CFLAGS		=	-Wall -Wextra -Werror -D BUFFER_SIZE=42
+CFLAGS		=	-Wall -Wextra -Werror -D BUFFER_SIZE=n
 FILES		=	get_next_line get_next_line_utils
 CFILES		=	$(addsuffix .c, $(FILES))
 HFILES		=	get_next_line.h

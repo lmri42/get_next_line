@@ -6,66 +6,122 @@
 /*   By: luribero <luribero@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 23:50:43 by luribero          #+#    #+#             */
-/*   Updated: 2024/03/27 15:55:02 by luribero         ###   ########.fr       */
+/*   Updated: 2024/03/30 00:41:17 by luribero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-
-
-
-
-char	*reader(int fd)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	static char	buff[BUFFER_SIZE + 1];
-	char		*bag;
-	char		*output;
-	int			reading;
-	static char	*remain;
+	size_t	p;
+	size_t	s;
+	char	*ptr;
 
-	if ((ft_strlen(remain) == 0) || (remain == NULL)) //IF VARIABLE REMAIN IS EMPTY OR NULL
-	{
-		reading = read(fd, buff, BUFFER_SIZE); //READ INSIDE BUFFER
-		if (reading <= 0) //IF NOTHING ELSE TO READ OR ERROR
-			return (NULL);
-		if (reading < BUFFER_SIZE) //IF THIS IS THE LAST READING
-			{
-				buff[reading] = '\0';//CLOSE LAST STRING
-				output = ft_strdup(buff); //OUTPUT BECOMES LAST COPY
-				return (output); //RETURNS LAST COPY >> NEED TO FREE!
-		}
-		else //IF THERE ARE STILL CONTENT TO READ
-		{
-			buff[BUFFER_SIZE] = '\0';//CLOSE FULL STRING
-			if (eloc(buff) != -1) //IF THERE IS A '\N' INSIDE BUFFER
-			{
-				output = ft_substr(buff, eloc(buff), ft_strlen(buff);//OUTPUT UNTIL '\N'
-				if ((eloc(buff) + 1) < ft_strlen(b)))//IF THERE IS EXTRA CONTENT INSIDE BUFFER AFTER '\N'
-					remain = ft_substr((buff + eloc(buff) + 1), (ft_strlen(buff) - eloc(buff) - 1), ft_strlen(buff));
-				else//IF THERE IN NO EXTRA CONTENT INSIDE BUFFER
-					remain == NULL;
-				return (output);
-			}
-			else //IF THERE IS NO '\N' INSIDE BUFFER
-			{
-				if (ft_strlen(bag) != 0) //CHECK IF BAG IS EMPTY
-				//IF NOT EMPTY. ADD TO BAG.
-				else
-					bag = ft_strdup(buff); //CREATE BAG
-
+	p = ft_strlen((char *)s1);
+	s = ft_strlen((char *)s2);
+	ptr = (char *)malloc(p + s + 1);
+	if (ptr == NULL)
+		return (NULL);
+	ft_strlcpy(ptr, s1, (p + 1));
+	ft_strlcpy((ptr + p), s2, (s + 1));
+	return (ptr);
+}
 
 char *get_next_line(int fd)
 {
-	char	*line;
-	char	*end;
-
-	end = "\n";
-	line = reader(fd);
-	if (line == NULL)
+    char *line;
+    char buffer[BUFFER_SIZE + 1];
+    char *bag;
+    char *temp;
+    static char	*remain;
+   
+    bag = 0;
+    if (ft_strlen(remain) > 0)
+    {
+    	if(eloc(remain) > -1)
 	{
-		return (end);
+	    if((eloc(remain) + 1) < ft_strlen(remain))
+	    {
+		line = ft_substr(remain, 0, eloc(remain));
+		temp = remain;
+		remain = ft_substr(remain, eloc(remain) + 1, ft_strlen(remain) - eloc(remain));
+		free(temp);
+	    }
+	    else
+	    {
+	    	line = ft_substr(remain, 0, eloc(remain));
+		free(remain);
+		remain = 0;
+	    }
+	    return (line);
+	}
+	bag = ft_strdup(remain);
+    }
+    while (read(fd, buffer, BUFFER_SIZE) > 0)
+    { 
+	while ((eloc(buffer) == -1) && (eloc(bag) == -1))
+    	{
+	    if (eloc(buffer) == -1)
+	    {
+		if(ft_strlen(bag) != 0)
+		{
+	    		temp = bag;
+			bag = ft_strjoin(bag,buffer);
+	    		free(temp);
+		}
+		else
+		{
+		    bag = ft_strdup(buffer);
+		}
+		read(fd, buffer, BUFFER_SIZE);
+	    }
+	}
+	if (eloc(bag) > -1)
+	{
+	    line = ft_substr(buffer, 0, eloc(buffer));
+	    if((eloc(bag) + 1) < ft_strlen(bag))
+	    {
+		remain = ft_substr(bag, eloc(bag) + 1, ft_strlen(bag) - eloc(bag));
+	    }
+	    else
+	    {
+		free(remain);
+		remain = 0;
+	    }
+	}
+	else if ((eloc(buffer) > -1) && (ft_strlen(bag) > 0))
+	{
+	    temp = bag;
+	    bag = ft_strjoin(bag,buffer);
+	    free(temp);
+	    line = ft_substr(bag, 0, eloc(bag));
+	    if((eloc(buffer) + 1) < ft_strlen(buffer))
+	    {
+		remain = ft_substr(buffer, eloc(buffer) + 1, ft_strlen(buffer) - eloc(buffer));
+	    }
+	    else
+	    {
+		free(remain);
+		remain = 0;
+	    }
 	}
 	else
-		return (line);
-}
+	{
+	    line = ft_substr(buffer, 0, eloc(buffer));
+	    if((eloc(buffer) + 1) < ft_strlen(buffer))
+	    {
+		remain = ft_substr(buffer, eloc(buffer) + 1, ft_strlen(buffer) - eloc(buffer));
+	    }
+	    else
+	    {
+		free(remain);
+		remain = 0;
+	    }
+	}
+	return (line);
+    }
+    free(remain);
+    remain = 0;
+    return(0);
+} 

@@ -6,7 +6,7 @@
 /*   By: luribero <luribero@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 00:02:02 by luribero          #+#    #+#             */
-/*   Updated: 2024/03/27 16:09:28 by luribero         ###   ########.fr       */
+/*   Updated: 2024/03/30 00:43:47 by luribero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ int		eloc(char *txt);
 //ALLOCATE SPACE FOR NEW STRING WITH THE CONTENT FROM A PREVIOUS STRING
 char	*ft_strdup(const char *s1);
 
-//READS FROM A FILE 
-char	*reader(int fd);
+//New string, which is the result of the concatenation of ’s1’ and ’s2’.
+char	*ft_strjoin(char const *s1, char const *s2);
 
 //GETS NEXT LINE FROM A FILE DESCRIPTOR
 char	*get_next_line(int fd);

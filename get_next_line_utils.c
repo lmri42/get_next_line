@@ -6,7 +6,7 @@
 /*   By: luribero <luribero@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 14:10:16 by luribero          #+#    #+#             */
-/*   Updated: 2024/03/27 16:10:05 by luribero         ###   ########.fr       */
+/*   Updated: 2024/03/29 18:01:53 by luribero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t n)
 		n--;
 	}
 	if (n > 0)
-	{
 		*dst = '\0';
-	}
 	return (len);
 }
 
@@ -65,9 +63,7 @@ char	*ft_strdup(const char *s1)
 	size = ft_strlen((char *)s1);
 	ptr = malloc(size + 1);
 	if (ptr == NULL)
-	{
 		return (NULL);
-	}
 	ft_strlcpy(ptr, s1, (size + 1));
 	return (ptr);
 }
