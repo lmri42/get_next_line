@@ -1,1 +1,185 @@
-42
+42 (number)
+42 (forty-two) is the natural number that follows 41 and precedes 43.
+
+Mathematics
+
+Forty-two (42) is the sixth pronic number[1] and the eighth abundant number,[2] with an abundance of 12,[3] equal to the average of its eight divisors as an arithmetic number.[4][5]
+
+Its prime factorization {\displaystyle 2\times 3\times 7} makes it the second sphenic number, and also the second of the form (2.3.r).[6] 42 is the aliquot sum of 30,[7] the smallest sphenic number and second number to have an abundance of 12 after 24, and preceding 42. 42 itself has an aliquot sum of 54; within an aliquot sequence of twelve composite numbers (42,54,66,78,90,144,259,45,33,15,9,4,3,1,0) to the Prime in the 3-aliquot tree.
+
+It is also the sum of the first six positive non-zero even numbers, {\displaystyle 2+4+6+8+10+12}, and a Harshad number in decimal, because the sum of its digits is six {\displaystyle (4+2=6)}, which evenly divides 42.[8]
+
+42 is the fifth Catalan number, following 14; consequently, it is[9]
+
+the number of triangulations of a heptagon.
+the number of rooted ordered binary trees with six leaves, and
+the number of noncrossing partitions of a set of five elements, as well as the ways in which five pairs of nested parentheses can be arranged, etc.
+Additionally, 42 is the smallest number {\displaystyle k} that is equal to the sum its non-prime proper divisors; i.e. {\displaystyle 42=1+6+14+21}[10] (with the latter term representing the sixth triangular number).[11]
+
+42 is also the third primary pseudoperfect number,[12] and the first (2,6)-perfect number (super-multiperfect), where {\displaystyle \sigma ^{2}(n)=\sigma (\sigma (n))=6n.}[13]
+
+42 is the number of integer partition of 10: the number of ways of expressing 10 as a sum of positive integers.[14] 1111123, one of the forty-two unordered integer partitions of 10, has 42 ordered compositions, since {\displaystyle 7!\div 5!=42.}
+
+As a polygonal number, 42 is the first (non-trivial) fifteen-sided pentadecagonal number.[15] It is also the fourth meandric number,[16] and seventh open meandric number[17] (following 8 and 14, respectively).
+
+On the other hand, an angle of 42 degrees can be constructed with a compass and straight edge with the use of the golden ratio; i.e. through the difference between constructible angles of 60 and 18 degrees (with root pentagonal symmetry).
+
+Where the plane-vertex tiling 3.10.15 is constructible through elementary methods, the largest such tiling, 3.7.42, is not. This means that the 42-sided tetracontadigon is the largest such regular polygon that can only tile a vertex alongside other regular polygons, without tiling the plane.[18][19][20]
+
+42 is also the first non-trivial hendecagonal (11-gonal) pyramidal number, after 12.[21][22][a] Otherwise, forty-two is the least possible number of diagonals of a simple convex hendecahedron (or 11-faced polyhedron).[28][29][b]
+
+42 is the only known {\displaystyle k} that is equal to the number of sets of four distinct positive integers {\displaystyle (a,b,c,d)} — each less than {\displaystyle k} — such that {\displaystyle {\text{ }}ab-cd,{\text{ }}} {\displaystyle ac-bd{\text{ }}} and {\displaystyle {\text{ }}ad-bc{\text{ }}} are all multiples of {\displaystyle k}. Whether there are other values remains an open question.[30]
+
+42 is the resulting number of the original Smith number: {\displaystyle 4937775=3\times 5\times 5\times 65837.} Both the sum of its digits, {\displaystyle 4+9+3+7+7+7+5}, and the sum of the digits in its prime factorization, {\displaystyle 3+5+5+(6+5+8+3+7)}, result in 42.[31]
+
+42 is the number of isomorphism classes of all simple and oriented directed graphs on four vertices.[32] I.e., the number of all outcomes (up to isomorphism) of a tournament of four teams where a game between a pair of teams results in three possible outcomes: wins from either team, or a draw.[33]
+
+42 is the fourth Robbins number, equivalently the number of {\displaystyle 4\times 4} alternating sign matrices.[34][35] It is also the number of ways to arrange the numbers {\displaystyle 1} through {\displaystyle 9} in a {\displaystyle 3\times 3} matrix such that the numbers in each row and column are in ascending order.
+
+42 is the magic constant of the smallest non-trivial magic cube, a {\displaystyle 3\times 3\times 3} cube with entries of 1 through 27, where every row, column, corridor, and diagonal passing through the center sums to forty-two.[36][37]
+
+42 is the number of (3, 3, 3) standard Young tableaux that use distinct entries[38][39][40] (as well as the number of (2, 2, 2, 2, 2) tableaux).[41][42]
+
+The last natural number less than 100 whose representation as a sum of three cubes was found (in 2019) is forty-two, where,[43]
+
+{\displaystyle 80,435,758,145,817,515^{3}+12,602,123,297,335,631^{3}+(-80,538,738,812,075,974)^{3}=42.}
+The dimension of the Borel subalgebra in the exceptional Lie algebra e6 is 42.
+
+42 is the smallest number {\displaystyle k} such that for every Riemann surface {\displaystyle \mathbf {C} } of genus {\displaystyle g\geq 2}, {\displaystyle \#{\text{Aut}}(C)\leq k\ {\text{deg}}(K_{C})=k(2g-2)} (by the Hurwitz's automorphisms theorem).
+
+This is related to 42 being the largest {\displaystyle n} where there exist positive integers {\displaystyle p,q,r} whose reciprocals alongside that of forty-two generate the sum,[44]
+
+{\displaystyle 1={\frac {1}{2}}+{\frac {1}{3}}+{\frac {1}{7}}+{\frac {1}{42}}.}
+Notice that the first three unit fractions are the first values in the infinite series (of Egyptian fractions) that most rapidly converges to {\displaystyle 1} (see, Sylvester's sequence).
+
+Other properties
+
+42 is the smallest integer that can only be made from a minimal number of fours (seven) using only addition, subtraction, multiplication, and division, where an intermediate value has to be a non-integer:[citation needed]
+
+{\displaystyle 42=(4+4)\times (4+{\frac {4+{\frac {4}{4}}}{4}})=8\times 5.25.}
+In decimal representation, the first three digits of pi, {\displaystyle 3.14\ldots \approx \pi }, can be arranged as a set of two strings to yield: {\displaystyle 3\times 14=42.}
+
+In the terminating decimal of the approximation for pi, the string {\displaystyle 42\;42\;42} occurs at the 242424th decimal "position" (when treating the decimal point as a position, as well).[45]
+
+Science
+
+42 is the atomic number of molybdenum.
+42 is the atomic mass of one of the naturally occurring stable isotopes of calcium.
+The angle rounded to whole degrees for which a rainbow appears (the critical angle).
+In 1966, mathematician Paul Cooper theorized that the fastest, most efficient way to travel across continents would be to bore a straight hollow tube directly through the Earth, connecting a set of antipodes, remove the air from the tube and fall through.[46] The first half of the journey consists of free-fall acceleration, while the second half consists of an exactly equal deceleration. The time for such a journey works out to be 42 minutes. Even if the tube does not pass through the exact center of the Earth, the time for a journey powered entirely by gravity (known as a gravity train) always works out to be 42 minutes, so long as the tube remains friction-free, as while the force of gravity would be lessened, the distance traveled is reduced at an equal rate.[47][48] (The same idea was proposed, without calculation by Lewis Carroll in 1893 in Sylvie and Bruno Concluded.[49]) Now we know that is inaccurate, and it only would take about 38 minutes.[50]
+As determined by the Babylonians, in 79 years, Mars orbits the Sun almost exactly 42 times.[51]
+The hypothetical efficiency of converting mass to energy, as per {\displaystyle E=mc^{2},} by having a given mass orbit a rotating black hole, is 42%, the highest efficiency yet known to modern physics.[52]
+In Powers of Ten by Ray and Charles Eames, the known universe from large-scale to small-scale is represented by 42 different powers of ten. These powers range from 1025 meters to 10−17 meters.
+Technology
+
+Magic numbers used by programmers:
+In TIFF (Tag Image File Format), the second 16-bit word of every file is 42, "an arbitrary but carefully chosen number that further identifies the file as a TIFF file".
+In the reiser4 file system, 42 is the inode number of the root directory.
+In the military IRIG 106 Chapter 10[53] data recording standard, the hex value 0x464F52545974776F (ASCII "FORTYtwo") is used as a magic number to identify directory blocks.
+The GNU C Library, a set of standard routines available for use in computer programming, contains a function—memfrob()—which performs an XOR combination of a given variable and the binary pattern 00101010 (42) as an XOR cipher.
+Tiling a plane using regular hexagons, which is honeycomb in appearance, is approximated in a topological sense to an accuracy of better than 1% using a stretcher bond brick pattern with bricks of 42 squares (6 by 7).[54]
+The password expiration policy for a Microsoft Windows domain defaults to 42 days.[55]
+The ASCII code 42 is for the asterisk symbol, being a wildcard for everything.
+Astronomy
+
+Messier object M42, a magnitude 5.0 diffuse nebula in the constellation Orion, also known as the Orion Nebula.
+The New General Catalogue object NGC 42, a spiral galaxy in the constellation Pegasus.
+In January 2004, asteroid 2001 DA42 was given the permanent name 25924 Douglasadams, for the author Douglas Adams who popularized the number 42. Adams died in 2001. Brian G. Marsden, the director of the Minor Planet Center and the secretary for the naming committee, remarked that, with even his initials in the provisional designation, "This was sort of made for him, wasn't it?".
+Kepler-42, a red dwarf in the constellation Cygnus that hosts the three smallest exoplanets found to date.
+42 Isis, a large main-belt asteroid measuring about 100 km in diameter.
+Religion
+
+Ancient Egyptian religion: Over most of pharaonic Egyptian history, the empire was divided into 42 nomes. Ancient Egyptian religion and mythological structure frequently model this terrestrial structure.[56]
+42 body parts of Osiris: In some traditions of the Osiris myth, Seth slays Osiris and distributes his 42 body parts all over Egypt. (In others, the number is fourteen and sixteen).[57]
+42 negative confessions: In Ancient Egyptian religion, the 42 negative confessions were a list of questions asked of deceased persons making their journey through the underworld after death. Ma'at was an abstract concept representing moral law, order, and truth in both the physical and moral spheres, as well as being an important goddess in the religion. In the judgment scene described in the Egyptian Book of the Dead, which evolved from the Coffin Texts and the Pyramid Texts, 42 questions were asked of the deceased person as part of the assessment of Ma'at. If the deceased person could reasonably give answers to the 42 questions, they would be permitted to enter the afterlife. These 42 questions are known as the "42 Negative Confessions" and can be found in funerary texts such as the Papyrus of Ani.
+42 books in the core library: Clement of Alexandria states that the Egyptian temple library is divided into 42 "absolutely necessary" books that formed the stock of a core library. 36 contain the entire philosophy of the Egyptians which are memorized by the priests. While the remaining 6, are learned by the Pastophoroi (image-bearers).[58][59] (36 is like-wise a sacred number in Egyptian thought, related to time, in particular the thirty-six Decan stars and the thirty-six, 10-day "weeks" in the Egyptian year.[60]) The 42 books were not canonized like the Hebrew bible; they only supported and never replaced temple ritual. Hence, the destruction of the Egyptian temples and the cessation of the rituals ended Egyptian cultural continuity.[61]
+Abrahamic religions
+There are 42 Stations of the Exodus which are the locations visited by the Israelites following their exodus from Egypt, recorded in Numbers 33, with variations also recorded in the books of Exodus and Deuteronomy.
+In 2 Kings 2:24, the she-bears summoned by Elisha kill forty-two boys.
+In Judaism, the number (in the Babylonian Talmud, compiled 375 AD to 499 AD) of the "Forty-Two Lettered Name" ascribed to God. Rab (or Rabhs), a 3rd-century source in the Talmud stated "The Forty-Two Lettered Name is entrusted only to him who is pious, meek, middle-aged, free from bad temper, sober, and not insistent on his rights". [Source: Talmud Kidduschin 71a, Translated by Rabbi I. Epstein]. Maimonides felt that the original Talmudic Forty-Two Lettered Name was perhaps composed of several combined divine names [Maimonides "Moreh"]. The apparently unpronouncable Tetragrammaton provides the backdrop from the Twelve-Lettered Name and the Forty-Two Lettered Name of the Talmud.[citation needed]
+In Judaism, by some traditions the Torah scroll is written with no fewer than 42 lines per column, based on the journeys of Israel.[62] In the present day, 42 lines is the most common standard,[63] but various traditions remain in use (see Sefer Torah).
+42 is the number with which God creates the Universe in Kabbalistic tradition. In Kabbalah, the most significant name is that of the En Sof (also known as "Ein Sof", "Infinite" or "Endless"), who is above the Sefirot (sometimes spelled "Sephirot").[64] The Forty-Two-Lettered Name contains four combined names which are spelled in Hebrew letters (spelled in letters = 42 letters), which is the name of Azilut (or "Atziluth" "Emanation"). While there are obvious links between the Forty-Two Lettered Name of the Babylonian Talmud and the Kabbalah's Forty-Two Lettered Name, they are probably not identical because of the Kabbalah's emphasis on numbers. The Kabbalah also contains a Forty-Five Lettered Name and a Seventy-Two Lettered Name.
+The number 42 appears in various contexts in Christianity. There are 42 generations (names) in the Gospel of Matthew's version of the Genealogy of Jesus; it is prophesied that for 42 months the Beast will hold dominion over the Earth (Revelation 13:5); 42 men of Beth-azmaveth were counted in the census of men of Israel upon return from exile (Ezra 2:24); God, because of a "curse" Elisha put on them, sent/allowed bears to maul 42 teenage boys who mocked Elisha for his baldness (2 Kings 2:23-24), “For a thousand years in your sight are like a day that has just gone by, or like a watch in the night.” (Psalm 90:4)→ “Fear God and give Him glory, because the hour of His judgment has come. Worship the One who made the heavens and the earth and the sea and the springs of waters.” (Revelation 14:7)→ 1,000 years per day/24 hours per day ≈ 42 years/hour, etc.
+The Gutenberg Bible is also known as the "42-line Bible", as the book contained 42 lines per page.
+The Forty-Two Articles (1552), largely the work of Thomas Cranmer, were intended to summarize Anglican doctrine, as it now existed under the reign of Edward VI.
+East Asian religions
+The Sutra of Forty-two Sections is a Buddhist scripture.
+In Japanese culture, the number 42 is considered unlucky because the numerals when pronounced separately—shi ni (four two)—sound like the word "dying",[65] like the Latin word "mori".
+Popular culture
+
+The Hitchhiker's Guide to the Galaxy
+
+The number 42 is, in The Hitchhiker's Guide to the Galaxy by Douglas Adams, the "Answer to the Ultimate Question of Life, the Universe, and Everything", calculated by an enormous supercomputer named Deep Thought over a period of 7.5 million years. Unfortunately, no one knows what the question is. Thus, to calculate the Ultimate Question, a special computer the size of a small planet was built from organic components and named "Earth". The Ultimate Question "What do you get when you multiply six by nine"[66] is found by Arthur Dent and Ford Prefect in the second book of the series, The Restaurant at the End of the Universe. This appeared first in the radio play and later in the novelization of The Hitchhiker's Guide to the Galaxy.
+
+The fourth book in the series, the novel So Long, and Thanks for All the Fish, contains 42 chapters. According to the novel Mostly Harmless, 42 is the street address of Stavromula Beta. In 1994, Adams created the 42 Puzzle, a game based on the number 42. Adams says he picked the number simply as a joke, with no deeper meaning.
+
+Google also has a calculator easter egg when one searches "the answer to the ultimate question of life, the universe, and everything." Once typed (all in lowercase), the calculator answers with the number 42.[67]
+
+In Hervé Le Tellier's novel The Anomaly, a top-secret US Government protocol receives code number 42, inspired by this source.[citation needed]
+
+Works of Lewis Carroll
+
+Lewis Carroll, who was a mathematician,[68] made repeated use of this number in his writings.[69]
+
+Examples of Carroll's use of 42:
+
+Alice's Adventures in Wonderland has 42 illustrations.
+Alice's attempts at multiplication (chapter two of Alice in Wonderland) work if one uses base 18 to write the first answer, and increases the base by threes to 21, 24, etc. (the answers working up to 4 × 12 = "19" in base 39), but "breaks" precisely when one attempts the answer to 4 × 13 in base 42, leading Alice to declare "oh dear! I shall never get to twenty at that rate!"[citation needed]
+Rule Forty-two in Alice's Adventures in Wonderland ("All persons more than a mile high to leave the court").
+Rule 42 of the Code in the preface[70] to The Hunting of the Snark ("No one shall speak to the Man at the Helm").
+In "fit the first" of The Hunting of the Snark the Baker had "forty-two boxes, all carefully packed, With his name painted clearly on each."[71]
+The White Queen announces her age as "one hundred and one, five months and a day", which—if the best possible date is assumed for the action of Through the Looking-Glass (e.g., a date is chosen such that the rollover from February to March is excluded from what would otherwise be an imprecise measurement of "five months and a day")—gives a total of 37,044 days. If the Red Queen, as part of the same chess set, is regarded as the same age, their combined age is 74,088 days, or 42 × 42 × 42.[72]
+Music
+
+42 Dugg is an American rapper.
+"Forty-two" ("42") is a work (dedicated to Elvis Presley, Joe Dassin and Vladimir Vysotsky) for oboe and symphony orchestra by Estonian composer Peeter Vähi.
+Level 42 is an English pop/rock/funk music band.
+"42" is one of the tracks on Coldplay′s 2008 album Viva la Vida or Death and All His Friends.
+"Channel 42" is an electronic music song by deadmau5 featuring Wolfgang Gartner; it appears on the 2012 deadmau5 album Album Title Goes Here.
+"42" is a song from Mumford and Sons′ 2018 album Delta.
+"42" is a song written and produced by hip-hop and record production trio 3Racha, which consists of members Bang Chan, Han Jisung, and Seo Changbin of popular k-pop group Stray Kids. A lyric in this song states, "Why do we live? What's the purpose? Is it 42? Stop speaking nonsense," which directly references The Hitchhiker's Guide to the Galaxy's definition of 42.
+""42"" is a song from the 2018 album SR3MM by American rap duo Rae Sremmurd.
+"42" is a song from the 2019 album Don′t Panic by the progressive rock band IZZ. The album is a partial concept album based on The Hitchhiker's Guide to the Galaxy.
+"42" is a song by The Disco Biscuits.[73]
+Television and film
+
+The Kumars at No. 42 is a British comedy television series.
+"42" is an episode of Doctor Who, set in real time lasting approximately 42 minutes.
+On the game show Jeopardy!, "Watson" the IBM supercomputer has 42 "threads" in its avatar.[74]
+42 is a film on the life of American baseball player Jackie Robinson.
+Captain Harlock is sometimes seen wearing clothing with the number 42 on it.
+In the Stargate Atlantis season 4 episode "Quarantine", Colonel Sheppard states that Dr. McKay's password ends in 42 because "It's the ultimate answer to the great question of life, the universe and everything."
+In Star Wars: The Rise of Skywalker, the Festival of the Ancestors on Planet Pasaana is held every 42 years. The film itself was released in 2019, 42 years after the 1977 original Star Wars film. By a "whole string of pretty meaningless coincidences",[75] 2019 is the same year that 42 was found to be the largest possible natural number less than 100 to be expressed as a sum of three cubes.[43]
+In the TV show Lost, 42 is one of the numbers used throughout the show for some of its mysteries.
+There is a Belgian TV drama called Unit 42 about a special police unit that uses high-tech tools to go after criminals. One of the characters in the pilot episode explains that the unit was named based on the Hitchhiker's Guide.
+Video games
+
+42 Entertainment is the company responsible for several alternate reality games, including I Love Bees, Year Zero, and Why So Serious.
+Tokyo 42 is a video game released in 2017.
+Squadron 42 is a video game set in the Star Citizen Universe with an unspecified release date.
+Sports
+
+The jersey number of Jackie Robinson, which is the only number retired by all Major League Baseball teams. Although the number was retired in 1997, Mariano Rivera of the New York Yankees, the last professional baseball player to wear number 42, continued to wear it until he retired at the end of the 2013 season. As of the 2014 season, no player ever again wore the number 42 in Major League Baseball except on Jackie Robinson Day (April 15), when all uniformed personnel (players, managers, coaches, and umpires) wear the number.
+The number of the laws of cricket.[76]
+Rule 42 is the historic name of a Gaelic Athletic Association rule (now codified in Rule 5.1 and Rule 44) that in practice prohibits the playing of "foreign sports" (generally association football and the rugby codes) at GAA grounds.
+Architecture
+
+The architects of the Rockefeller Center in New York City worked daily in the Graybar Building where on "the twenty-fifth floor, one enormous drafting room contained forty-two identical drawing boards, each the size of a six-seat dining room table; another room harboured twelve more, and an additional fourteen stood just outside the principals' offices at the top of the circular iron staircase connecting 25 to 26".[77]
+In the Rockefeller Center (New York City) there are a total of "forty-two elevators in five separate banks"[78] which carry tenants and visitors to the sixty-six floors.
+Comics
+
+Miles Morales was bitten by a spider bearing the number 42, causing him to become a Spider-Man. The number was later heavily referenced in the film Spider-Man: Into the Spider-Verse. The use of 42 within the franchise references Jackie Robinson's use of the number, though many fans incorrectly believed it to be a Hitchhiker's Guide to the Galaxy reference.[79]
+Other fields
+
++42 is the historical Select Country for the former country of Czechoslovakia.
+There are 42 US gallons in a barrel of oil.
+42 is the number of the French department of Loire. The number is also reflected in the postal code for that area.
+Tower 42 is a skyscraper in the City of London, formerly known as the NatWest Tower.[80]
+In New York City, 42nd Street is a main and very popular two-way thoroughfare. Landmarks on it include the Chrysler Building, Grand Central Terminal, the main branch of the New York Public Library, and Times Square. The Headquarters of the United Nations is at the east end of the street. The New York City street is also the setting for a movie by the same name (which also gave fame to its eponymous title song), and which later inspired a musical adaptation, 42nd Street.
+42 is the inspiration for the name of the 42 Center of Excellence for Artificial Intelligence, based in Vienna, Austria.[81]
+42 is the name of the private computer science school with campuses located in Paris, France, and Fremont, California.
+42 in Chinese reads sì èr, which is very close to shì a (是啊), which means 'yes'. It was once popular among young Chinese to send '42' as a short message to stand for 'yes'.[citation needed]
+42 is the sum of the numbers on a pair of dice.
+42 (dominoes) is a trick-taking game played with dominoes, rather than cards. Originated and predominantly found in Texas.
+42 is the number of times a standard sheet of paper would need to be folded over onto itself for the thickness of the folded piece of paper to be thick enough to reach the Moon from the surface of the Earth.[82]
+42 is the maximum amount of marks in the International Mathematical Olympiad.
