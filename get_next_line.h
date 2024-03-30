@@ -6,7 +6,7 @@
 /*   By: luribero <luribero@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 00:02:02 by luribero          #+#    #+#             */
-/*   Updated: 2024/03/30 00:43:47 by luribero         ###   ########.fr       */
+/*   Updated: 2024/03/30 01:41:27 by luribero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <unistd.h>		//write
 # include <limits.h>		//LONG_MIN, INT_MAX, ULONG_MAX, etc
 # include <fcntl.h>			//open
-# define BUFFER_SIZE 42 		 	// buffer size
+//# define BUFFER_SIZE 1000 		 	// buffer size
 # define GET_NET_LINE_H
 
 //STRING COPY: COPY X NUMBER OF CHARACTERS FROM A STRING TO ANOTHER

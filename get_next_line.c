@@ -6,7 +6,7 @@
 /*   By: luribero <luribero@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 23:50:43 by luribero          #+#    #+#             */
-/*   Updated: 2024/03/30 00:41:17 by luribero         ###   ########.fr       */
+/*   Updated: 2024/03/30 02:40:58 by luribero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ char *get_next_line(int fd)
     char buffer[BUFFER_SIZE + 1];
     char *bag;
     char *temp;
+    int	cread;
     static char	*remain;
    
     bag = 0;
@@ -43,14 +44,14 @@ char *get_next_line(int fd)
 	{
 	    if((eloc(remain) + 1) < ft_strlen(remain))
 	    {
-		line = ft_substr(remain, 0, eloc(remain));
+		line = ft_substr(remain, 0, eloc(remain) + 1);
 		temp = remain;
 		remain = ft_substr(remain, eloc(remain) + 1, ft_strlen(remain) - eloc(remain));
 		free(temp);
 	    }
 	    else
 	    {
-	    	line = ft_substr(remain, 0, eloc(remain));
+	    	line = ft_substr(remain, 0, eloc(remain) + 1);
 		free(remain);
 		remain = 0;
 	    }
@@ -58,7 +59,12 @@ char *get_next_line(int fd)
 	}
 	bag = ft_strdup(remain);
     }
-    while (read(fd, buffer, BUFFER_SIZE) > 0)
+    cread = read(fd, buffer, BUFFER_SIZE);
+    if(cread == -1)
+    {
+	return(0);
+    }
+    while(cread > 0)
     { 
 	while ((eloc(buffer) == -1) && (eloc(bag) == -1))
     	{
@@ -74,12 +80,16 @@ char *get_next_line(int fd)
 		{
 		    bag = ft_strdup(buffer);
 		}
-		read(fd, buffer, BUFFER_SIZE);
+		cread = read(fd, buffer, BUFFER_SIZE);
+		if(cread == -1)
+		{
+		    return(0);
+		}
 	    }
 	}
 	if (eloc(bag) > -1)
 	{
-	    line = ft_substr(buffer, 0, eloc(buffer));
+	    line = ft_substr(buffer, 0, eloc(buffer) + 1);
 	    if((eloc(bag) + 1) < ft_strlen(bag))
 	    {
 		remain = ft_substr(bag, eloc(bag) + 1, ft_strlen(bag) - eloc(bag));
@@ -95,7 +105,7 @@ char *get_next_line(int fd)
 	    temp = bag;
 	    bag = ft_strjoin(bag,buffer);
 	    free(temp);
-	    line = ft_substr(bag, 0, eloc(bag));
+	    line = ft_substr(bag, 0, eloc(bag) + 1);
 	    if((eloc(buffer) + 1) < ft_strlen(buffer))
 	    {
 		remain = ft_substr(buffer, eloc(buffer) + 1, ft_strlen(buffer) - eloc(buffer));
@@ -108,7 +118,7 @@ char *get_next_line(int fd)
 	}
 	else
 	{
-	    line = ft_substr(buffer, 0, eloc(buffer));
+	    line = ft_substr(buffer, 0, eloc(buffer) + 1);
 	    if((eloc(buffer) + 1) < ft_strlen(buffer))
 	    {
 		remain = ft_substr(buffer, eloc(buffer) + 1, ft_strlen(buffer) - eloc(buffer));

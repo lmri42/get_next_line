@@ -6,7 +6,7 @@
 /*   By: luribero <luribero@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/29 16:51:46 by luribero          #+#    #+#             */
-/*   Updated: 2024/03/30 00:51:41 by luribero         ###   ########.fr       */
+/*   Updated: 2024/03/30 02:38:31 by luribero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,10 @@ int main(int argc, char *argv[])
 	    printf("-END-\n");
 	    return(1);
 	}
-	printf("%s\n", line);
+	printf("%s", line);
 	times--;
 	round++;
     }
+    close(fd);
     return (0);
 }
