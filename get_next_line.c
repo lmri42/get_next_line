@@ -6,7 +6,7 @@
 /*   By: luribero <luribero@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 23:50:43 by luribero          #+#    #+#             */
-/*   Updated: 2024/03/30 03:12:33 by luribero         ###   ########.fr       */
+/*   Updated: 2024/04/04 22:41:07 by luribero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,9 @@ char *get_next_line(int fd)
     static char	*remain;
    
     bag = 0;
+    
+    if((fd < 0) || (BUFFER_SIZE < 1) || (BUFFER_SIZE > INT_MAX))
+	return (0);
     if (ft_strlen(remain) > 0)
     {
     	if(eloc(remain) > -1)

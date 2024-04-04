@@ -6,7 +6,7 @@
 /*   By: luribero <luribero@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/29 16:51:46 by luribero          #+#    #+#             */
-/*   Updated: 2024/03/30 02:38:31 by luribero         ###   ########.fr       */
+/*   Updated: 2024/04/04 22:30:00 by luribero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ int main(int argc, char *argv[])
 
     if(argc != 3)
     {
-	printf("Error: Please provide 2 arguments.\n");
-	printf("1 ARG: Path to file to read.\n");
-	printf("2 ARG:: Number of lines..\n");
+	printf("Error!\n\tPlease provide 2 arguments.\n");
+	printf("\tA1:\tPath to file to read.\n");
+	printf("\tA2:\tNumber of lines to read.\n");
 	return (1);
     }
     times = atoi(argv[2]);
