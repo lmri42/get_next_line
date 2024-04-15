@@ -6,15 +6,16 @@
 #    By: luribero <luribero@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/05 00:10:28 by luribero          #+#    #+#              #
-#    Updated: 2024/03/30 01:51:52 by luribero         ###   ########.fr        #
+#    Updated: 2024/04/15 17:48:50 by luribero         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 .PHONY: all clean fclean re
 
 NAME		=	get_next_line.a
-CC		=	gcc
-CFLAGS		=	-Wall -Wextra -Werror -D BUFFER_SIZE=42
+BSIZE		=	2
+CC			=	gcc
+CFLAGS		=	-Wall -Wextra -Werror -D BUFFER_SIZE=$(BSIZE)
 FILES		=	get_next_line get_next_line_utils
 CFILES		=	$(addsuffix .c, $(FILES))
 HFILES		=	get_next_line.h

@@ -6,7 +6,7 @@
 /*   By: luribero <luribero@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 14:10:16 by luribero          #+#    #+#             */
-/*   Updated: 2024/03/29 18:01:53 by luribero         ###   ########.fr       */
+/*   Updated: 2024/04/15 17:27:19 by luribero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t n)
 }
 
 //STRING LENGHT: COUNTS THE TOTAL NUMBER OF CHARACTERS, DOESNT INCLUDE "\0"
-int ft_strlen(char *txt)
+int	ft_strlen(char *txt)
 {
 	int	count;
 
@@ -54,32 +54,34 @@ int ft_strlen(char *txt)
 	return (count);
 }
 
-//DUPLICATE A STRING TO A NEWLY ALLOCATED MEMORY BLOCK
-char	*ft_strdup(const char *s1)
+//STRING JOIN: ALLOCATES A NEW STRING, WHICH IS THE CONCATENATION OF S1 AND S2
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	size;
-	void	*ptr;
+	size_t	p;
+	size_t	s;
+	char	*ptr;
 
-	size = ft_strlen((char *)s1);
-	ptr = malloc(size + 1);
+	p = ft_strlen((char *)s1);
+	s = ft_strlen((char *)s2);
+	ptr = (char *)malloc(p + s + 1);
 	if (ptr == NULL)
 		return (NULL);
-	ft_strlcpy(ptr, s1, (size + 1));
+	ft_strlcpy(ptr, s1, (p + 1));
+	ft_strlcpy((ptr + p), s2, (s + 1));
 	return (ptr);
 }
 
-
 //END LOCATOR: SEARCH FOR THE POSITION OF FIRST "\N", OTHERWISE RETURNS -1
-int eloc(char *txt) 
+int	eloc(char *txt)
 {
 	int	count;
 
 	count = 0;
 	if (ft_strlen(txt) != 0)
 	{
-		while(*txt != '\0')
+		while (*txt != '\0')
 		{
-			if(*txt != '\n')
+			if (*txt != '\n')
 			{
 				count++;
 				txt++;
@@ -91,7 +93,7 @@ int eloc(char *txt)
 	return (-1);
 }
 
-//CREATE A SUBSTRING FROM A STRING
+//SUB-STRING: CREATE A SUBSTRING FROM A STRING
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	int				i;
