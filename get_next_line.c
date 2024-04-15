@@ -6,11 +6,11 @@
 /*   By: luribero <luribero@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 23:50:43 by luribero          #+#    #+#             */
-/*   Updated: 2024/04/15 18:36:41 by luribero         ###   ########.fr       */
+/*   Updated: 2024/04/15 18:39:20 by luribero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h> 
+#include <stdio.h> 
 #include "get_next_line.h"
 
 char	*get_next_line(int fd)
@@ -23,7 +23,7 @@ char	*get_next_line(int fd)
 	char		*line;
 
 	bag = 0;
-//	printf ("Remains from previous:\n\"%s\"\n", remain);
+	printf ("Remains from previous:\n\"%s\"\n", remain);
 	if ((fd < 0) || (BUFFER_SIZE < 1) || (BUFFER_SIZE > INT_MAX))
 		return (0);
 	if ((remain != 0) && (*remain != '\0'))
@@ -43,7 +43,7 @@ char	*get_next_line(int fd)
 				free(remain);
 				remain = 0;
 			}
-//			printf ("Remains for next time:\n\"%s\"\n", remain);
+			printf ("Remains for next time:\n\"%s\"\n", remain);
 			return (line);
 		}
 		else
@@ -54,7 +54,7 @@ char	*get_next_line(int fd)
 		}
 	}
 	cread = read(fd, buffer, BUFFER_SIZE);	
-//	printf ("Buffer:\n\"%s\"\n", buffer);
+	printf ("Buffer:\n\"%s\"\n", buffer);
 	while ((cread == BUFFER_SIZE) && (eloc(buffer) == -1))
 	{
 		if ((bag != 0) && (*bag != '\0'))
@@ -67,7 +67,7 @@ char	*get_next_line(int fd)
 		else
 			bag = ft_substr(buffer, 0, ft_strlen(buffer)); //CHECK
 		cread = read(fd, buffer, BUFFER_SIZE);
-//		printf ("Buffer:\n\"%s\"\n", buffer);
+		printf ("New Buffer:\n\"%s\"\n", buffer);
 	}
 	if (cread < 0)
 	{
@@ -101,10 +101,10 @@ char	*get_next_line(int fd)
 	{
 		line = ft_substr(buffer, 0, eloc(buffer)); //CHECK
 		if ((eloc(buffer) + 1) < (ft_strlen(buffer)))
-//		{
+		{
 			remain = ft_substr(buffer, eloc(buffer) + 1, ft_strlen(buffer) - eloc(buffer));
-//			printf ("Remains for next time:\n\"%s\"\n", remain);
-//		}
+			printf ("Remains for next time:\n\"%s\"\n", remain);
+		}
 		if ((bag != 0) && (*bag != '\0'))
 		{
 			temp = line;
