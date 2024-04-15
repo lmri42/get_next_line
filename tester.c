@@ -6,7 +6,7 @@
 /*   By: luribero <luribero@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/29 16:51:46 by luribero          #+#    #+#             */
-/*   Updated: 2024/04/15 18:21:08 by luribero         ###   ########.fr       */
+/*   Updated: 2024/04/15 18:37:02 by luribero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	main(int argc, char *argv[])
 	fd = open(argv[1], O_RDONLY);
 	while (times > 0)
 	{
-		printf ("\nSTART!\n");
+		printf (".\nSTART!\n");
 		line = get_next_line(fd);
 		printf ("-line: %d-\n", round);
 		if (line == 0)

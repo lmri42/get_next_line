@@ -6,7 +6,7 @@
 /*   By: luribero <luribero@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 23:50:43 by luribero          #+#    #+#             */
-/*   Updated: 2024/04/15 18:20:45 by luribero         ###   ########.fr       */
+/*   Updated: 2024/04/15 18:36:41 by luribero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*get_next_line(int fd)
 	{
 		if (eloc(remain) > -1)
 		{
-			line = ft_substr(remain, 0, eloc(remain) + 1);
+			line = ft_substr(remain, 0, eloc(remain)); //CHECK
 			if ((eloc(remain) + 1) < ft_strlen(remain))
 			{
 				temp = remain;
@@ -48,7 +48,7 @@ char	*get_next_line(int fd)
 		}
 		else
 		{
-			bag = ft_substr(remain, 0, ft_strlen(remain) + 1);
+			bag = ft_substr(remain, 0, ft_strlen(remain)); //CHECK
 			free(remain);
 			remain = 0;
 		}
@@ -65,7 +65,7 @@ char	*get_next_line(int fd)
 			temp = 0;
 		}
 		else
-			bag = ft_substr(buffer, 0, ft_strlen(buffer) + 1);
+			bag = ft_substr(buffer, 0, ft_strlen(buffer)); //CHECK
 		cread = read(fd, buffer, BUFFER_SIZE);
 //		printf ("Buffer:\n\"%s\"\n", buffer);
 	}
@@ -94,12 +94,12 @@ char	*get_next_line(int fd)
 			bag = 0;
 		}
 		else
-			line = ft_substr(buffer, 0, ft_strlen(buffer) + 1);
+			line = ft_substr(buffer, 0, ft_strlen(buffer)); //CHECK
 		return (line);
 	}
 	else
 	{
-		line = ft_substr(buffer, 0, eloc(buffer) + 1);
+		line = ft_substr(buffer, 0, eloc(buffer)); //CHECK
 		if ((eloc(buffer) + 1) < (ft_strlen(buffer)))
 //		{
 			remain = ft_substr(buffer, eloc(buffer) + 1, ft_strlen(buffer) - eloc(buffer));
