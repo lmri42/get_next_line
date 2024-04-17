@@ -6,12 +6,22 @@
 /*   By: luribero <luribero@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 23:50:43 by luribero          #+#    #+#             */
-/*   Updated: 2024/04/15 18:39:20 by luribero         ###   ########.fr       */
+/*   Updated: 2024/04/17 12:02:19 by luribero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h> 
+#include <stdio.h> //testing
 #include "get_next_line.h"
+
+void clean(char *buff, int times)
+{
+	while(times >= 0)
+	{
+		*buff = '\0';
+		times--;
+		buff++;
+	}
+}
 
 char	*get_next_line(int fd)
 {
@@ -23,38 +33,49 @@ char	*get_next_line(int fd)
 	char		*line;
 
 	bag = 0;
-	printf ("Remains from previous:\n\"%s\"\n", remain);
+//	printf ("Remains from previous:\n\"%s\"\n", remain);//testing
 	if ((fd < 0) || (BUFFER_SIZE < 1) || (BUFFER_SIZE > INT_MAX))
 		return (0);
 	if ((remain != 0) && (*remain != '\0'))
 	{
+//		printf("REMAIN FOUND!\n"); //testing
 		if (eloc(remain) > -1)
 		{
+//			printf("END OF LINE FOUND IN REMAIN!\n"); //testing
+//			printf("Eloc (remain) in \"%d\"\n", eloc(remain)); //testing
 			line = ft_substr(remain, 0, eloc(remain)); //CHECK
+//			printf("1.Line says \"%s\"\n", line); //testing
+
 			if ((eloc(remain) + 1) < ft_strlen(remain))
 			{
+//				printf("CREATING REMAIN FROM REMAIN!\n"); //testing
 				temp = remain;
-				remain = ft_substr(remain, eloc(remain) + 1, ft_strlen(remain) - eloc(remain));
+				remain = ft_substr(remain, eloc(remain), ft_strlen(remain) - eloc(remain));
 				free(temp);
 				temp = 0;
+//				printf ("Remains for next time:\n\"%s\"\n", remain);//testing
 			}
 			else
 			{
+//				printf("FREE REMAIN!\n"); //testing
 				free(remain);
 				remain = 0;
 			}
-			printf ("Remains for next time:\n\"%s\"\n", remain);
 			return (line);
 		}
 		else
 		{
+//			printf ("CREATING BAG FROM REMAIN"); //testing
 			bag = ft_substr(remain, 0, ft_strlen(remain)); //CHECK
+//			printf("Strlen(remain) is \"%d\"\n", ft_strlen(remain)); //testing
+//			printf("Bag says \"%s\"\n", bag); //testing
 			free(remain);
 			remain = 0;
 		}
 	}
+	clean(buffer, BUFFER_SIZE);
 	cread = read(fd, buffer, BUFFER_SIZE);	
-	printf ("Buffer:\n\"%s\"\n", buffer);
+//	printf ("Buffer:\n\"%s\"\n", buffer); //testing
 	while ((cread == BUFFER_SIZE) && (eloc(buffer) == -1))
 	{
 		if ((bag != 0) && (*bag != '\0'))
@@ -65,9 +86,14 @@ char	*get_next_line(int fd)
 			temp = 0;
 		}
 		else
+		{
 			bag = ft_substr(buffer, 0, ft_strlen(buffer)); //CHECK
+//			printf("Bag says \"%s\"\n", bag); //testing
+//			printf("Strlen(buffer) is \"%d\"\n", ft_strlen(buffer)); //testing
+		}
+		clean(buffer, BUFFER_SIZE);
 		cread = read(fd, buffer, BUFFER_SIZE);
-		printf ("New Buffer:\n\"%s\"\n", buffer);
+//		printf ("New Buffer:\n\"%s\"\n", buffer); //testing
 	}
 	if (cread < 0)
 	{
@@ -94,16 +120,32 @@ char	*get_next_line(int fd)
 			bag = 0;
 		}
 		else
-			line = ft_substr(buffer, 0, ft_strlen(buffer)); //CHECK
+		{
+			if(eloc(buffer) > -1)
+			{
+				line = ft_substr(buffer, 0, eloc(buffer)); //CHECK
+				if ((eloc(buffer) + 1) < (ft_strlen(buffer)))
+				{
+					remain = ft_substr(buffer, eloc(buffer), ft_strlen(buffer) - eloc(buffer));
+//					printf ("Remains for next time:\n\"%s\"\n", remain);//testing
+				}
+			}
+			else
+				line = ft_substr(buffer, 0, ft_strlen(buffer)); //CHECK
+//			printf("2.Line says \"%s\"\n", line); //testing
+//			printf("Strlen(buffer) is \"%d\"\n", ft_strlen(buffer)); //testing
+		}
 		return (line);
 	}
 	else
 	{
 		line = ft_substr(buffer, 0, eloc(buffer)); //CHECK
+//		printf("3.Line says \"%s\"\n", line); //testing
+//		printf("Eloc(buffer) is \"%d\"\n", eloc(buffer)); //testing
 		if ((eloc(buffer) + 1) < (ft_strlen(buffer)))
 		{
-			remain = ft_substr(buffer, eloc(buffer) + 1, ft_strlen(buffer) - eloc(buffer));
-			printf ("Remains for next time:\n\"%s\"\n", remain);
+			remain = ft_substr(buffer, eloc(buffer), ft_strlen(buffer) - eloc(buffer));
+//			printf ("Remains for next time:\n\"%s\"\n", remain);//testing
 		}
 		if ((bag != 0) && (*bag != '\0'))
 		{
