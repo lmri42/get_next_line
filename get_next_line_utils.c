@@ -6,7 +6,7 @@
 /*   By: luribero <luribero@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 14:10:16 by luribero          #+#    #+#             */
-/*   Updated: 2024/04/17 11:06:20 by luribero         ###   ########.fr       */
+/*   Updated: 2024/04/17 17:42:39 by luribero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,9 +72,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 }
 
 //END LOCATOR: SEARCH FOR THE POSITION OF FIRST "\N", OTHERWISE RETURNS -1
-int		eloc(char *txt)
+int	eloc(char *txt)
 {
-	int    count;
+	int	count;
 
 	count = 1;
 	if ((txt == 0) || (*txt == 0))
@@ -89,7 +89,7 @@ int		eloc(char *txt)
 		else
 			return (count);
 	}
-    return (-1);
+	return (-1);
 }
 
 //SUB-STRING: CREATE A SUBSTRING FROM A STRING

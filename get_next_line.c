@@ -6,7 +6,7 @@
 /*   By: luribero <luribero@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 23:50:43 by luribero          #+#    #+#             */
-/*   Updated: 2024/04/17 13:39:53 by luribero         ###   ########.fr       */
+/*   Updated: 2024/04/17 17:56:06 by luribero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	*get_next_line(int fd)
 			line = ft_substr(remain, 0, eloc(remain));
 //			printf("1.Line says \"%s\"\n", line); //testing
 
-			if ((eloc(remain) + 1) < ft_strlen(remain))
+			if ((eloc(remain)) < ft_strlen(remain))
 			{
 //				printf("CREATING REMAIN FROM REMAIN!\n"); //testing
 				temp = remain;
@@ -125,7 +125,7 @@ char	*get_next_line(int fd)
 		{
 			temp = line;
 			line = ft_substr (line, 0, eloc(line));
-			if((eloc(buffer) + 1) < ft_strlen(buffer))
+			if((eloc(buffer)) < ft_strlen(buffer))
 				remain = ft_substr(temp, eloc(temp), ft_strlen(temp) - eloc(temp));
 			free(temp);
 			temp = 0;
@@ -137,7 +137,7 @@ char	*get_next_line(int fd)
 		line = ft_substr(buffer, 0, eloc(buffer));
 //		printf("3.Line says \"%s\"\n", line); //testing
 //		printf("Eloc(buffer) is \"%d\"\n", eloc(buffer)); //testing
-		if ((eloc(buffer) + 1) < (ft_strlen(buffer)))
+		if ((eloc(buffer)) < (ft_strlen(buffer)))
 		{
 			remain = ft_substr(buffer, eloc(buffer), ft_strlen(buffer) - eloc(buffer));
 //			printf ("Remains for next time:\n\"%s\"\n", remain);//testing

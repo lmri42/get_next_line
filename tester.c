@@ -6,7 +6,7 @@
 /*   By: luribero <luribero@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/29 16:51:46 by luribero          #+#    #+#             */
-/*   Updated: 2024/04/17 11:18:26 by luribero         ###   ########.fr       */
+/*   Updated: 2024/04/17 17:02:54 by luribero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,16 +34,16 @@ int	main(int argc, char *argv[])
 	while (times > 0)
 	{
 		line = get_next_line(fd);
-		printf ("-starting line: %d-\n", round);
+		printf ("-line: %d-\n", round);
 		if (line == 0)
 		{
-			printf ("-END-\n");
+			printf ("-END OF DOCUMENT-\n");
 			return (1);
 		}
 		printf("%s", line);
 		times--;
 		round++;
-		printf("-end of line-\n\n");
+		printf("-end-\n\n");
 	}
 	close(fd);
 	return (0);
